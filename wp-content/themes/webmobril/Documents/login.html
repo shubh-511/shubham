@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login</title>
+
+<!-- Stylesheets -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137150856-1"></script>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137150856-1');
+</script>
+
+<script type="text/javascript">
+            $(document).ready(function(){
+$("form").click(function(event){
+    event.preventDefault();
+  });
+  $("#but_submit").on("click", function() {
+    $(window).scrollTop(0);
+});
+                $("#but_submit").click(function(){
+                    
+					var email = $("#email").val().trim();
+					var password = $("#password").val().trim();
+					
+
+                    //if( email != "" && password != "" ){
+                        $.ajax({
+                            url:'login.php',
+                            type:'post',
+                            data:{email:email,password:password},
+                            success:function(response){
+                                var msg = "";
+                              var imgs;
+								if(response == 2){
+								imgs = document.getElementById("message");
+								imgs.style.display="block";
+                                    msg = "Please enter email";
+                                }
+								else if(response == 3){
+								imgs = document.getElementById("message");
+								imgs.style.display="block";
+                                    msg = "Please enter password";
+                                }
+								else if(response == 4){
+								imgs = document.getElementById("message");
+								imgs.style.display="block";
+									msg = "Invalid email or password!";
+                                    
+                                }
+								else if(response == 5){
+								imgs = document.getElementById("message");
+								imgs.style.display="block";
+									msg = "Invalid email format!";
+                                    
+                                }								
+								else if(response == 1){
+									window.location = "submit-ticket.html";
+                                   //msg = "Invalid username and password!";
+                                }
+								else
+								{
+								imgs = document.getElementById("message");
+								imgs.style.display="block";
+									msg = "Failed to Login!";
+								}
+                                $("#message").html(msg);
+								(function(){
+         var timeout = 4000; // in miliseconds (4*1000)
+            $('#message').delay(timeout).fadeOut(400);
+			
+            })();
+                            }
+                        });
+                   // }
+                });
+
+            });
+        </script>
+
+</head>
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from azim.commonsupport.com/SeoArena/service.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jul 2018 06:52:24 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shared Hosting</title>
+
+<!-- Stylesheets -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<!-- page wrapper -->
+<body class="page-wrapper">
+
+    <!-- .preloader -->
+    <div class="preloader"></div>
+
+   <!-- main header area --> 
+  <header class="main-header">
+        <div class="theme_menu ">
+            <div class="container">
+                <div class="row">
+				
+				<div class="col-md-4 col-sm-6 col-xs-12 footer-column pull-right footer-top">
+                        <ul class="footer-social footer-wideget">
+                            
+							<li><a href="https://www.facebook.com/webmobrilcloud/"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/WebmobrilCloud"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/webmobrilcloud/"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://in.pinterest.com/webmobrilcloud/"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="https://webmobrilcloud.tumblr.com/"><i class="fa fa-tumblr"></i></a></li>
+							<li><a href="mailto:support@webmobrilhost.com"><i class="fa fa-envelope"></i></a></li>
+							<li><a href="skype:ashish.webmobril"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+					
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="logo-box">
+                            <a href="/"><figure><img src="images/home/final.png" alt="logo"></figure></a>
+                        </div>
+                    </div>
+                   
+                </div>
+           </div>
+        </div>
+
+    </header>
+    <!-- end main header area -->
+
+<div class="sub-header">
+<ul>
+  <li><a class="active" href="register.html">Register</a></li>
+  <!--<li><a href="submit-ticket.html">Submit Ticket</a></li>-->
+ 
+</ul>
+
+</div>
+
+<section class="section5 ">
+<!--<div class="heading "><h1>How can we help you?</h1>
+
+ <form class="navbar-form navbar-left search-feild" action="/action_page.php">
+  <div class="input-group">
+    <input type="text" class="form-control search-sec" placeholder="Search">
+    <div class="input-group-btn">
+      <button class="btn btn-default search-btn" type="submit">
+       <i class="fa fa-search"></i></i>
+      </button>
+    </div>
+  </div>
+</form>
+
+ </div>-->
+</section>
+   
+
+	<!-- login Details  -->
+<div class="login-page">
+<div class="container">
+<div id="message" style="text-align: center;
+    margin: 10px 0px 15px;color: red!important;
+    font-size: 20px;
+    border: 1px solid;display:none;width: 45%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;position: relative;
+    right: 30px;"></div>
+ <form class="form-horizontal col-sm-offset-4 col-sm-4" action="">
+  <div class="form-group">
+    <div class="col-sm-10">
+      <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-10">
+      <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+    </div>
+  </div>
+  <!--<div class="form-group">
+    <div class=" col-sm-10">
+      <div class="checkbox">
+       
+	<a href="#" class="fp">Forget Password?</a>
+      </div>
+    </div>
+	
+   
+  </div>-->
+   
+  <div class="form-group">
+    <div class="  col-sm-10">
+      <!-- <button type="submit" class="btn btn-default ">Login</button>-->
+	 <input type="button" class="btn btn-default" value="Login" name="but_submit" id="but_submit" />
+    </div>
+  </div>
+   <div class="account"> <h2>Do not have an Account?</h2></div>
+  
+  
+</form>
+<div class=" form-horizontal col-sm-offset-4 col-sm-4">
+    <div class="form-group ">
+	<div class="  col-sm-10">
+     <a href="register.html"  class="btn btn-default">Register</a>
+    </div>
+    </div>
+  </div>
+</div></div>
+<!-- login Details  --> 
+	
+
+
+
+
+	
+	
+	
+	
+   
+
+	
+	
+  
+
+   
+
+
+
+
+    <!-- main footer area -->
+    <footer class="main-footer-area">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-6 col-xs-12 footer-column">
+                        <div class="logo-wideget footer-wideget">
+                            <a href="/"><figure><img src="images/footer/final.png" alt="logo"></figure></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-2 footer-column">
+                        <div class="update-wideget footer-wideget">
+                            <div class="title"><h3>Get Subscribed & Stay Updated</h3></div>
+                        
+                            <div class="signup-form" style=" margin-top:46px;">
+                                <form method="post" action="#">
+                                    <div class="input-box">
+                                        <input type="email" placeholder="Enter your email address*">
+                                        <button type="submit"><i class="fa fa-envelope-o"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="col-md-4 col-sm-6 col-xs-12 footer-column">
+                        <ul class="footer-social footer-wideget">
+                            
+							<li><a href="https://www.facebook.com/webmobrilcloud/"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/WebmobrilCloud"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/webmobrilcloud/"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://in.pinterest.com/webmobrilcloud/"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="https://webmobrilcloud.tumblr.com/"><i class="fa fa-tumblr"></i></a></li>
+							<li><a href="support@webmobrilhost.com"><i class="fa fa-envelope"></i></a></li>
+							<li><a href="skype:ashish.webmobril"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="main-footer">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer-column">
+                        <div class="about-company footer-wideget  wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="footer-title"><h4>About Company</h4></div>
+                            <div class="text">
+                                <p>Webmobril Cloud is a well-known name in web hosting 
+								   industry. Our topmost priority is to provide 
+								   great hosting solutions to all our esteemed 
+								   clients at a cost that they can afford. 
+								   No hidden fees or contracts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12 footer-column  wow slideInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                        <div class="link-wideget footer-wideget">
+                            <div class="footer-title"><h4>Quick Links</h4></div>
+                            <ul class="list">
+                                <li><a href="about-us.html">About Us</a></li>
+                              
+                              
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="service-level-agreement.html">SLA</a></li>
+                                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12 footer-column">
+                        <div class="link-wideget footer-wideget  wow slideInUp" data-wow-delay="0ms" data-wow-duration="2500ms">
+                            <div class="footer-title"><h4>Our Services</h4></div>
+                            <ul class="list">
+                                <li><a href="wordpress-hosting.html">Wordpress Hosting</a></li>
+                                <li><a href="shared-hosting.html">Shared Hosting</a></li>
+                                <li><a href="reseller-hosting.html">Reseller Hosting</a></li>
+                                <li><a href="cloud-vps-hosting.html">Cloud SSD VPS</a></li>
+                                <li><a href="best-dedicated-server-hosting.html">Dedicated Servers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+					
+					<div class="col-md-2 col-sm-6 col-xs-12 footer-column">
+                        <div class="link-wideget footer-wideget  wow slideInUp" data-wow-delay="0ms" data-wow-duration="2500ms">
+                            <div class="footer-title"><h4>Our Products</h4></div>
+                            <ul class="list">
+                                <li><a href="#">Website Builder</a></li>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Logo Design</a></li>
+                                <li><a href="#">Register Domains</a></li>
+                                <li><a href="#">Search Advertising</a></li>
+                            </ul>
+                        </div>
+                    </div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-12 footer-column">
+                        <div class="link-wideget footer-wideget  wow slideInUp" data-wow-delay="0ms" data-wow-duration="2500ms">
+                            <div class="footer-title"><h4>Recent Blogs</h4></div>
+                            <ul class="list">
+                                <li><a href="https://www.webmobrilcloud.com/blog-details.html">Blogs</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-md-12 col-sm-12 col-xs-12 footer-column pull-right">
+                        <div class="contact-wideget footer-wideget  wow slideInUp" data-wow-delay="0ms" data-wow-duration="3000ms">
+                            <div class="row">
+							<div class="col-md-12">
+							<div class="footer-title text-center"><h4>Contact Us</h4></div>
+                            </div>
+							<div class="col-md-4">
+							<div class="phone"><i class="fa fa-phone"></i>+1 646-491-6152 (Sales)</div>
+							 <div class="phone"><i class="fa fa-phone"></i></i>+91-9818013708 (Sales)</div>
+							   <div class="phone"><i class="fa fa-phone"></i></i> +91-9873434914  (Support)</div>
+						</div>
+						<div class="col-md-4">
+                            <div class="email"><i class="fa fa-envelope-o" ></i>
+  &nbsp;&nbsp;&nbsp;&nbsp;support@webmobrilhost.com</div>
+  
+  <div class="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sales@webmobrilhost.com</div>
+  </div>
+  <div class="col-md-4">
+                            <div class="address"><i class="fa fa-map-marker"></i>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: G-18, Sector-63 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noida (Delhi-NCR) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pin: 201301, India
+
+</div>
+</div>
+</div>
+                        </div>
+                    </div>
+					
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- main footer area end -->
+
+
+    <!-- footer bottom -->
+    <section class="footer-bottom centred">
+        <div class="copyright">© 2019 &nbsp;<a href="https://www.webmobril.com/">WebMobril || </a><a href="terms-of-service.html">Terms of Service || </a><a href="privacy-policy.html">Privacy Policy || </a><a href="service-level-agreement.html">Service Level Agreement || </a><a href="https://www.webmobrilcloud.com/sitemap.xml">SiteMap </a></div>
+    </section>
+    <!-- footer bottom -->
+
+
+    
+    
+<!--End pagewrapper-->
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-angle-up"></span></div>
+
+
+<!--jquery js -->
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script src="js/html5lightbox/html5lightbox.js"></script> 
+<script src="js/circle-progress.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/jquery.appear.js"></script>
+
+<!-- revolution -->
+<script src="vendor/revolution/jquery.themepunch.tools.min.js"></script>
+<script src="vendor/revolution/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.migration.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<!-- End of .page_wrapper -->
+</body>
+</html>
+
+
+  
+
+
+
+
+
+
+
+

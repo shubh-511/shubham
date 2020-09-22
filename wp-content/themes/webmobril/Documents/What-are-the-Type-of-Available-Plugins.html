@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blog | Difference Between Web Space and Bandwidth of Web Server</title>
+
+<!-- Stylesheets -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137150856-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137150856-1');
+</script>
+
+</head>
+
+<!-- page wrapper -->
+<body class="page-wrapper">
+
+    <!-- .preloader -->
+    <div class="preloader"></div>
+
+    
+    <!-- main header area -->
+    <header class="main-header">
+        <div class="theme_menu stricky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="logo-box">
+                            <a href="/"><figure><img src="images/home/final.png" alt=""></figure></a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-12 col-xs-12">
+                        <div class="menu-area">
+                            <nav class="main-menu"> <!-- main-menu -->
+                                <div class="navbar-header">     
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                               <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li class="current"><a href="/">Home</a></li>
+                                        <li class="dropdown"><a href="#">Web Hosting</a>
+                                            <ul class="submenu">
+                                                <li><a href="shared-hosting.html">Shared Hosting</a></li>
+                                                <li><a href="reseller-hosting.html">Reseller Hosting</a></li>
+												  <li><a href="ecommerce-hosting.html">Ecommerce Hosting</a></li>
+												    <li><a href="joomla-hosting.html">Joomla Hosting</a></li>
+													    <li><a href="cloud-vps-hosting.html">Cloud SSD VPS</a></li>
+														  <li><a href="best-dedicated-server-hosting.html">Dedicated Servers</a></li>
+                                            </ul>
+                                        </li>
+										<li><a href="wordpress-hosting.html">Wordpress Hosting</a></li>
+                                       <li class="dropdown"><a href="#">Website Security</a>
+                                            <ul class="submenu">
+                                                <li><a href="ssl-certificates.html">SSL Certificates</a></li>
+                                                <li><a href="geotrust-anti-malware.html">Anti-Malware</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="#">Company</a>
+                                            <ul class="submenu">
+                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="terms-of-service.html">Terms of Service</a></li>
+												 <li><a href="privacy-policy.html">Privacy Policy</a></li>
+											
+											    <li><a href="service-level-agreement.html">Service Level Agreement</a></li>
+                                            </ul>
+                                        </li>
+										  <li><a href="login.html">Support</a></li>
+                                         <li><a href="contact-us.html">Contact Us</a></li>
+										 <li><a href="blog-details.html">Blog</a></li>
+                                    </ul>
+
+
+                                    <!-- mobile menu -->
+                                     <ul class="mobile-menu clearfix">
+                                         <li class="current"><a href="/">Home</a></li>
+                                        <li class="dropdown"><a href="#">Web Hosting</a>
+                                            <ul class="submenu">
+                                                <li><a href="shared-hosting.html">Shared Hosting</a></li>
+                                                <li><a href="reseller-hosting.html">Reseller Hosting</a></li>
+												  <li><a href="ecommerce-hosting.html">Ecommerce Hosting</a></li>
+												    <li><a href="joomla-hosting.html">Joomla Hosting</a></li>
+													    <li><a href="cloud-vps-hosting.html">Cloud SSD VPS</a></li>
+														  <li><a href="best-dedicated-server-hosting.html">Dedicated Servers</a></li>
+                                            </ul>
+                                        </li>
+										<li><a href="wordpress-hosting.html">Wordpress Hosting</a></li>
+                                       <li class="dropdown"><a href="#">Website Security</a>
+                                            <ul class="submenu">
+                                                <li><a href="ssl-certificates.html">SSL Certificates</a></li>
+                                                <li><a href="geotrust-anti-malware.html">Anti-Malware</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="#">Company</a>
+                                            <ul class="submenu">
+                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="terms-of-service.html">Terms of Service</a></li>
+												 <li><a href="privacy-policy.html">Privacy Policy</a></li>
+												 
+											    <li><a href="service-level-agreement.html">Service Level Agreement</a></li>
+                                            </ul>
+                                        </li>
+										  <li><a href="login.html">Support</a></li>
+                                         <li><a href="contact-us.html">Contact Us</a></li>
+										 <li><a href="blog-details.html">Blog</a></li>
+                                    </ul>
+                                    </ul>
+                                </div>
+                            </nav>
+                          
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+    </header>
+    <!-- end main header area -->
+
+
+    <!-- page title -->
+    <section class="page-title">
+        <div class="container">
+            <div class="content-box">
+			<div><h1>Blog</h1></div>
+                <ul class="bread-crumb"> 
+                    <li><a href="/">Home</a></li>
+                    <li>&nbsp;/&nbsp;</li>
+                    <li>Blog</li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+
+    <!-- blog details -->
+    <section class="blog-details sidebar-page-container news-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-12 col-xs-12 content-side">
+                    <div class="blog-details-content">
+                        <div class="content-style-one">
+						<div class="img-box  wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms"><figure><img src="images/brand/What-are-the-Type-of-Available-Plugins.jpg" alt=""></figure></div>
+                            <div class="lower-content single-item">
+                                <div class="meta-content">
+                                    <ul class="meta-left"> 
+                                        <li>By <span>Sarah</span></li>
+                                        <li>13 November</li>
+                                    </ul>
+                                    <ul class="meta-right">
+                                        <li><span class="fa fa-heart-o"></span></li>
+                                        <li>104</li>
+                                    </ul>
+                                </div>
+                                <div class="title">What are the Type of Available Plugins?</div>
+                                <div class="text">
+                                    <p>It works like a thread one connected to the other developing supportive system. WordPress cover more than 87% of sites live on the internet at the moment. The number is dominating but not exaggerated. It’s a well-known fact, WordPress sites performance better in WordPress hosting surroundings. So it’s all in favour.</p>
+                                </div> 
+									<div class="text">								
+								<p>Also, WordPress is the largest source of free website plugins that help in preparing a potential product with abilities to confront the highly competitive market. Below are some of the most used plugins from the WordPress plugin directory.</p>  
+                            </div>								
+									<h3>Yoast SEO</h3>
+									<div class="text">								
+								<p>Yoast SEO is a SEO plugin, preferred by millions of users to improve the performance of content through SEO. Basically Yoast is used by site authors to manage on-page content and optimize it according to the keywords for positive results on search engines and social networks.</p>  
+                            </div>
+							
+								<h3>WooCommerce</h3>
+									<div class="text">								
+								<p>Woocommerce is a free eCommerce plugin used for installing the full-fledged functionality of an eCommerce site. It adds all components of an online store to any business website. Therefore, it’s a highly recommended option provided by the web hosts. The special thing with WooCommerce is the endless flexibility enforcing massive numbers in terms of users. WooCommerce powering more than 30% of the all online store.</p>    
+                            </div>
+							<h3>Updraft Plus</h3>
+									<div class="text">								
+								<p>Updraft Plus is another free plugin provided by WordPress. It is utilized for backing up site file to ensure safety of data and file. Its world’s top ranked backup scheduling plugin. These backups are stored in the cloud directories. Updraft Plus is highly popular and is already in used by millions of websites.</p>       
+                            </div>
+                        </div>
+                        <div class="post-share-option">
+                            <ul class="left-option">
+                                <li><a href="#">Analytics</a></li>
+                                <li><a href="#">Research</a></li>
+                            </ul>
+                            <div class="right-option">
+                                <div class="text">Share</div>
+                                <ul class="post-share">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+									<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="comment-area">
+                            <div class="comment-title"><h3>2 Comments</h3></div>
+                            <div class="single-comment  wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="img-box"><figure><img src="images/news/c1.png" alt=""></figure></div>
+                                <div class="comment-title">Jeremy Maxwell</div>
+                                <div class="comment-time">September 29, 2017</div>
+                                <div class="text">
+                                    <p> Very nice Blog</p>
+                                </div>
+                                <div class="button"><a href="index.html" class="btn-two">Reply</a></div>
+                            </div>
+                            <div class="single-comment  wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="img-box"><figure><img src="images/news/c2.png" alt=""></figure></div>
+                                <div class="comment-title">Erica Madeline</div>
+                                <div class="comment-time">September 29, 2017</div>
+                                <div class="text">
+                                    <p> This Blog really helped.</p>
+                                </div>
+                                <div class="button"><a href="index.html" class="btn-two">Reply</a></div>
+                            </div>
+                        </div>
+                        <div class="comment-form  wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="comment-title"><h3>Post a Comment</h3></div>
+                            <form id="contact-form" name="contact_form" class="default-form" action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="form_name" value="" placeholder="Your Name" required="">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="email" name="form_email" value="" placeholder="Email address" required="">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <textarea placeholder="Your Comment" name="form_message" required=""></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-one" data-loading-text="Please wait...">submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+			</div>
+				
+                <div class="col-md-3 col-sm-6 col-xs-12 sidebar-side">
+                    <div class="sidebar">
+                        <div class="sidebar-search sidebar-wideget  wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <form action="index.html">
+                                <input type="search" placeholder="Search ...">
+                                <button><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+				    
+							
+                        <div class="sidebar-categories sidebar-wideget  wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="sidebar-title"><h4>Categories</h4></div>
+                            <ul class="categories-list">
+                                <li><a href="#">Social Media Marketing</a></li>
+                                <li><a href="#" class="active">Email Marketing</a></li>
+                                <li><a href="#">Search Engine Optimization</a></li>
+                                <li><a href="#">Keyword Research</a></li>
+                                <li><a href="#">Content Development</a></li>
+                            </ul>
+                        </div>
+						
+					    <div class="sidebar-post sidebar-wideget  wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="sidebar-title"><h4>recent posts</h4></div>
+                            <div class="single-post">
+                                <div class="img-box"><a href="blog-details.html"><figure><img src="images/news/p3.jpg" alt=""></figure></a></div>
+                                <div class="post-title"><a href="blog-details.html">Email Marketing: Best Practices</a></div>
+                                <div class="date">September 23, 2019</div>
+                            </div>
+                            </div>
+                      </div>
+        </div>
+    </section>
+    <!-- blog details -->
+
+
+       <!-- main footer area -->
+    <footer class="main-footer-area">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-6 col-xs-12 footer-column">
+                        <div class="logo-wideget footer-wideget">
+                            <a href="/"><figure><img src="images/footer/final.png" alt=""></figure></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-2 footer-column">
+                        <div class="update-wideget footer-wideget">
+                            <div class="title"><h3>Get Subscribed & Stay Updated</h3></div>
+                          
+                            <div class="signup-form" style=" margin-top:46px;">
+                                <form method="post" action="#">
+                                    <div class="input-box">
+                                        <input type="email" placeholder="Enter your email address*">
+                                        <button type="submit"><i class="fa fa-envelope-o"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 footer-column">
+                        <ul class="footer-social footer-wideget">
+                              
+                            <li><a href="https://www.facebook.com/webmobrilcloud/"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/WebmobrilCloud"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/webmobrilcloud/"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://in.pinterest.com/webmobrilcloud/"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="https://webmobrilcloud.tumblr.com/"><i class="fa fa-tumblr"></i></a></li>
+							<li><a href="mailto:hr@webmobril.com"><i class="fa fa-envelope"></i></a></li>
+							<li><a href="skype:ashish.webmobril"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer-column">
+                        <div class="about-company footer-wideget  wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="footer-title"><h4>About Company</h4></div>
+                            <div class="text">
+                                <p>Webmobril Cloud is a well-known name in web hosting 
+								   industry. Our topmost priority is to provide 
+								   great hosting solutions to all our esteemed 
+								   clients at a cost that they can afford. 
+								   No hidden fees or contracts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12 footer-column  wow slideInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                        <div class="link-wideget footer-wideget">
+                            <div class="footer-title"><h4>Quick Links</h4></div>
+                            <ul class="list">
+                                <li><a href="about-us.html">About Us</a></li>
+                              
+                              
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="service-level-agreement.html">SLA</a></li>
+                                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12 footer-column">
+                        <div class="link-wideget footer-wideget  wow slideInUp" data-wow-delay="0ms" data-wow-duration="2500ms">
+                            <div class="footer-title"><h4>Our Services</h4></div>
+                            <ul class="list">
+                                <li><a href="wordpress-hosting.html">Wordpress Hosting</a></li>
+                                <li><a href="shared-hosting.html">Shared Hosting</a></li>
+                                <li><a href="reseller-hosting.html">Reseller Hosting</a></li>
+                                <li><a href="cloud-vps-hosting.html">Cloud SSD VPS</a></li>
+                                <li><a href="best-dedicated-server-hosting.html">Dedicated Servers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+					
+					<div class="col-md-2 col-sm-6 col-xs-12 footer-column">
+                        <div class="link-wideget footer-wideget  wow slideInUp" data-wow-delay="0ms" data-wow-duration="2500ms">
+                            <div class="footer-title"><h4>Our Products</h4></div>
+                            <ul class="list">
+                                <li><a href="https://www.webmobrilcloud.com/wordpress-hosting.html">Website Builder</a></li>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Logo Design</a></li>
+                                <li><a href="https://www.webmobrilcloud.com/login.html">Register Domains</a></li>
+                                <li><a href="#">Search Advertising</a></li>
+                            </ul>
+                        </div>
+                    </div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-12 footer-column">
+                        <div class="link-wideget footer-wideget  wow slideInUp" data-wow-delay="0ms" data-wow-duration="2500ms">
+                            <div class="footer-title"><h4>Recent Blogs</h4></div>
+                            <ul class="list">
+                                <li><a href="https://www.webmobrilcloud.com/blog-details.html">Blogs</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-md-12 col-sm-12 col-xs-12 footer-column pull-right">
+                        <div class="contact-wideget footer-wideget  wow slideInUp" data-wow-delay="0ms" data-wow-duration="3000ms">
+                            <div class="row">
+							<div class="col-md-12">
+							<div class="footer-title text-center"><h4>Contact Us</h4></div>
+                            </div>
+							<div class="col-md-4">
+							<div class="phone"><i class="fa fa-phone"></i>+1 646-491-6152 (Sales)</div>
+							 <div class="phone"><i class="fa fa-phone"></i></i>+91-9818013708 (Sales)</div>
+							   <div class="phone"><i class="fa fa-phone"></i></i> +91-9873434914  (Support)</div>
+						</div>
+						<div class="col-md-4">
+                            <div class="email"><i class="fa fa-envelope-o" ></i>
+  &nbsp;&nbsp;&nbsp;&nbsp;support@webmobrilhost.com</div>
+  
+  <div class="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sales@webmobrilhost.com</div>
+  </div>
+  <div class="col-md-4">
+                            <div class="address"><i class="fa fa-map-marker"></i>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: G-18, Sector-63 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noida (Delhi-NCR) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pin: 201301, India
+
+</div>
+</div>
+</div>
+                        </div>
+                    </div>
+					
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- main footer area end -->
+
+
+
+    <!-- footer bottom -->
+    <section class="footer-bottom centred">
+        <div class="copyright">© 2018 &nbsp;<a href="https://www.webmobril.com/">WebMobril || </a><a href="terms-of-service.html">Terms of Service || </a><a href="privacy-policy.html">Privacy Policy || </a><a href="service-level-agreement.html">Service Level Agreement || </a><a href="#">SiteMap </a></div>
+    </section>
+    <!-- footer bottom -->
+
+
+    
+    
+<!--End pagewrapper-->
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-angle-up"></span></div>
+
+
+<!--jquery js -->
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script src="js/html5lightbox/html5lightbox.js"></script> 
+<script src="js/circle-progress.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/jquery.appear.js"></script>
+
+<!-- revolution -->
+<script src="vendor/revolution/jquery.themepunch.tools.min.js"></script>
+<script src="vendor/revolution/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/revolution.extension.migration.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<!-- End of .page_wrapper -->
+</body>
+</html>

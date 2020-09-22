@@ -1,0 +1,282 @@
+/*
+Theme Name: Webmobril Cloud
+Version: 1.2.6
+Author: Webmobril Development Team
+Author URI:
+Theme URI:
+*/
+li.menu-item-has-children > a:after {
+ color: #444;
+ content: ' ▼';
+/* content: "\f107";*/
+ font-size: 10px;
+ vertical-align: 1px;
+}
+li li.menu-item-has-children > a:after {
+ color: #444;
+ content: ' ►';
+ font-size: 10px;
+ vertical-align: 1px;
+}
+
+.wpcf7-form-control.wpcf7-submit{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	  color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.msg {
+    display: none;
+}
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}
+.err_message_eml{ color:#F00; font-size:12px;}
+.err_message{ color:#F00; font-size:12px;}
+
+h2.widget-title{ color: #ffffff;
+    font-family: Open Sans;
+    font-size: 26px;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 5px 0;}
+	
+.post-entry p{ padding:20px;}
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }	
+.partner img{ border:1px solid #ccc; padding:10px;}
+.wp-pagenavi{ padding:20px;}
+ul.pagination li span.current{background:#02141f; color:#fff; margin-right:10px; border-radius:0; padding:10px 15px;}
+ul.pagination li{float:left; border-radius:0;}
+ul.pagination li a{border-top-left-radius:0 !important; border-bottom-left-radius:0 !important; padding:10px 15px; color:#eb6423;}
+ul.pagination a{border:1px solid #ddd; float:left; padding: 7px 15px; margin-right: 10px; color:#eb6423;}
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+#categories-3 .footer-title {display:none;}
+
+#categories-3 ul li a 
+{
+	padding: 0px 0px 0px 29px;
+	margin-bottom: 4px;
+	
+}
+
+#archives-3 ul li a 
+{
+	padding: 0px 0px 0px 29px;
+	margin-bottom: 4px;
+	
+}
+
+#tag_cloud-2 .tagcloud a 
+{
+	position: relative;
+display: inline-block;
+font-size: 14px;
+font-weight: 700;
+color:
+#222;
+padding: 5px 14px 5px 14px;
+border: 1px solid
+#edf0f3;
+text-align: center;
+transition: all 500ms ease;
+font-family: 'Lato',sans-serif;
+line-height: 26px;
+cursor: pointer;
+	
+}
+
+#archives-3 .widget-title {display:none;}
+
+#tag_cloud-2 .widget-title{display:none;}
+.portfolio #options ul#filter{padding:10px; margin:0 0 20px; text-align:left; background: #2580c9;}
+.portfolio #options ul#filter li{display:inline-block; margin:10px;}
+.portfolio #options ul#filter li a{color:#fff; text-transform:uppercase;}
+#isotope-container img{max-width:100%;}
+#isotope-container li.isotope-item{min-height:450px; margin-bottom: 30px;}
+#isotope-container li.isotope-item .blog-desc{min-height:240px;}
+
+@media only screen and (max-width:767px)
+{
+	#isotope-container li.isotope-item{min-height:auto; margin-bottom: 30px;}
+#isotope-container li.isotope-item .blog-desc{min-height:auto;}
+}
+
+.pagination-area ul li {float:left;}
+.pagination-area ul li a{
+padding: 10px;
+border: 1px solid
+#ccc;
+margin-left: 10px;}
+
+#respond h3 {display:none;}
+#commentform .comment-form-cookies-consent #wp-comment-cookies-consent {
+	float: left;
+margin-right: 10px;
+width:auto;
+}
+
+#respond .form-submit .submit {
+	display: inline-block;
+color:
+#fff;
+font-size: 16px;
+background:
+#df5626;
+border: 2px solid
+#df5626;
+text-transform: uppercase;
+padding: 9px 48px 9px 48px;
+font-weight: 700;
+text-align: center;
+z-index: 1;
+transition: all 500ms ease;
+width: 50%;
+}
+
+ol.commentlist img {
+	width:auto !important;
+}
+.comment-author.vcard{float:left; width:50%;}
+.comment-metadata{float:right; width:50%;}
+.comment-awaiting-moderation{float:left; width:100%;}
+footer.comment-meta{float:left; width:100%;}
+.comment-content p{margin-bottom:0 !important;}
+.comment-reply-link{background:#df5626; color:#fff; padding:5px;}
+.comment-reply-link:hover{color:#000;}
+.reply{margin-top:10px;}
+

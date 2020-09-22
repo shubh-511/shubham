@@ -1,0 +1,5 @@
+# Use PHP5.6
+
+<IfModule mime_module>
+AddType application/x-httpd-ea-php56 .php .php5 .phtml
+</IfModule>

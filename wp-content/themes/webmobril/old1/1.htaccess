@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+# redirect html pages to the root domain
+RewriteRule ^index\.html$ / [NC,R,L]
+
+RewriteCond %{HTTP_HOST} ^webmobrilcloud.com [NC]
+RewriteRule ^(.*)$ https://www.webmobrilcloud.com/$1 [L,R=301] 
+
+
+
+

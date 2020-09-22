@@ -5,6 +5,8 @@
  *
  * @package WordPress
  */
+ 
+ //fbkbf
 
 define( 'WP_INSTALLING', true );
 
